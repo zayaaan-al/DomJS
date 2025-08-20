@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image" src="logo.png" alt="logo">
+    <div id="box" class="card"></div>
+
+    <script>
+        const image1=document.getElementById("image");
+
+        // GET ATTRIBUTE//
+        console.log(image1.getAttribute("src"));
+
+        //setvattribute //
+
+    image1.setAttribute("src","new.jpg");
+    console.log(image1.getAttribute("src"));
+
+    //remove attribute//
+    image1.removeAttribute("alt");
+
+
+    </script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">original</div>
+    <div id="container"></div>
+    <script>
+        const content1=document.getElementById("content");
+
+        //inner html
+
+        content1.innerHTML="<b> Bold Text </b>";
+        content1.style.color="yellow";
+
+        //text content
+
+        coonsole.log(content1.textContent);
+
+        //inner text(visual-based)
+        console.log(content1.innerText);
+
+        const para1=document.createElement("p");
+        para1.textContent="new para";
+        
+    </script>
+</body>
+</html>

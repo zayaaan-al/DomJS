@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">WELCOME</h1>
+    <p class="text">paragraph1</p>
+    <p class="text">paragraph2</p>
+    <div class="box">Box 1</div>
+    <script>
+        const title1=document.getElementById("title");
+        console.log(title1.textContent);
+        const texts=document.getElementsByClassName("text");
+        console.log(texts[0].textContent);
+        const paragraph=document.getElementsByTagName("p");
+        console.log(paragraph.length);
+        const box1=document.querySelector(".text");
+        console.log(box1.textContent);
+        const alltext=document.querySelectorAll(".text");
+        alltext.forEach(el=>console.log(el.textContent));
+    </script>
+</body>
+</html>
